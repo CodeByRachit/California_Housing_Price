@@ -115,6 +115,17 @@ Includes:
 | ----------- | ------ | -------- | -------------- |
 | Closed Form | 0.4715 | 0.64018  | 0.0240         |
 
+###🔹Important Graphs
+
+<img width="916" height="648" alt="image" src="https://github.com/user-attachments/assets/4ede62ca-9397-46eb-b11a-e37333871cf2" />
+<img width="905" height="585" alt="image" src="https://github.com/user-attachments/assets/a7d33bd2-042b-4908-9232-e46ce5e75272" />
+<img width="988" height="594" alt="image" src="https://github.com/user-attachments/assets/1e75bb22-103b-4521-9c82-c77ccac0713a" />
+<img width="987" height="593" alt="image" src="https://github.com/user-attachments/assets/76ab3c91-2e34-46fa-bc65-da34a21ef828" />
+<img width="960" height="597" alt="image" src="https://github.com/user-attachments/assets/579a2f79-01df-4985-9189-23273bb3a300" />
+<img width="931" height="603" alt="image" src="https://github.com/user-attachments/assets/f9d13527-b03d-4a34-8e37-ddcfa18c7b21" />
+![Uploading image.png…]()
+
+
 ### 🔹 Key Insights
 
 * Closed-form achieves **best R²** with **fastest training**.
