@@ -158,6 +158,3 @@ pip install -r requirements.txt
 ```
 jupyter notebook
 ```
-
-
-If you want, I can also create a **requirements.txt**, a **project setup script**, or **polish the README with diagrams**.
