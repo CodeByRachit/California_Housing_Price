@@ -12,6 +12,12 @@ This project explores linear regression for predicting housing prices using the 
 
 ## 📂 Project Structure
 
+The `src/` directory contains the core model implementations:
+
+* `model_closed_form.py` — Normal Equation solver
+* `model_gd.py` — Gradient Descent implementation
+* `utils.py` — Data loading, preprocessing, metrics, and helper functions
+
 ```
 Housing-prices-Bias-Variance-GD-vs-Closed-form/
 │
@@ -36,6 +42,19 @@ Housing-prices-Bias-Variance-GD-vs-Closed-form/
 
 ## 📊 Dataset
 
+The raw California Housing dataset contains the following columns:
+
+* **longitude**
+* **latitude**
+* **housing_median_age**
+* **total_rooms**
+* **total_bedrooms**
+* **population**
+* **households**
+* **median_income**
+* **median_house_value** (target)
+
+The notebook `01_data_exploration.ipynb` performs cleaning and preprocessing and saves the output as `processed_data.csv`.
 The dataset contains California housing metrics such as:
 
 * Median income
@@ -79,7 +98,35 @@ Includes:
 
 ---
 
-## 📈 Visualizations
+## 📈 Results & Visualizations
+
+### 🔹 Processed Data (Gradient Descent Experiments)
+
+| Method        | Learning Rate | MSE               | R² Score | Train Time (s) |
+| ------------- | ------------- | ----------------- | -------- | -------------- |
+| GD (α=0.0001) | 0.0001        | 39,119,583,718.17 | -1.9853  | 0.1969         |
+| GD (α=0.001)  | 0.001         | 6,898,053,573.156 | 0.4736   | 0.1810         |
+| GD (α=0.01)   | 0.01          | 5,060,312,734.83  | 0.6138   | 0.1910         |
+| GD (α=0.05)   | 0.05          | 5,029,243,723.23  | 0.6162   | 0.1940         |
+
+### 🔹 Closed Form Results
+
+| Method      | MSE    | R² Score | Train Time (s) |
+| ----------- | ------ | -------- | -------------- |
+| Closed Form | 0.4715 | 0.64018  | 0.0240         |
+
+### 🔹 Key Insights
+
+* Closed-form achieves **best R²** with **fastest training**.
+* Gradient Descent converges well for α between **0.01 and 0.05**.
+* Extremely small LR (0.0001) fails to converge, giving negative R².
+
+Visualization notebooks show:
+
+* GD loss curve vs iterations
+* Residual analysis
+* Feature correlations
+* Error comparison graphs
 
 The notebooks generate:
 
@@ -111,3 +158,6 @@ pip install -r requirements.txt
 ```
 jupyter notebook
 ```
+
+
+If you want, I can also create a **requirements.txt**, a **project setup script**, or **polish the README with diagrams**.
